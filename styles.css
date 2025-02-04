@@ -1,0 +1,85 @@
+
+:root{
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-slate-300: hsl(212, 45%, 89%);
+    --color-slate-500: hsl(216, 15%, 48%);
+    --color-slate-900: hsl(218, 44%, 22%);
+
+    --font-size-500: .9375rem;
+
+    --font-weight-paragraph: 400;
+    --font-weight-heading: 700;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+  margin: auto;
+  text-align: center;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body{
+    font-family: "Outfit", serif;
+    background-color: var(--color-slate-500);
+}
+
+.flex-wrapper{
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+    background-color: var(--color-white);
+}
+
+.qr-img{
+   max-width: 85%;
+   margin-top: 1.25rem;
+   display: block;
+}
